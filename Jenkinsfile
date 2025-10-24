@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "madhan1205/boiler" // Docker Hub repo name
-        IMAGE_TAG  = "${env.BUILD_NUMBER}" // Unique tag for each build
-        PORT       = "3000" // Port your app runs on
+        IMAGE_NAME = "madhan1205/boiler"
+        IMAGE_TAG  = "${env.BUILD_NUMBER}"
+        PORT       = "3000" 
     }
 
     stages {
