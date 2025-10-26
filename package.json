@@ -1,7 +1,7 @@
 {
   "name": "new-project-base",
-  "version": "1.0.0",
-  "description": "Base project template with TypeScript, Express, and Docker",
+  "version": "1.0.1",
+  "description": "Base project template with TypeScript, Express, and Docker (PR practice update)",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -23,7 +23,8 @@
     "migrate:status": "node dist/scripts/knex.js migrate:status",
     "seed": "node dist/scripts/knex.js seed:run",
     "seed:make": "ts-node src/scripts/knex.ts seed:make",
-    "new-migrate": "ts-node src/scripts/knex.ts migrate:make"
+    "new-migrate": "ts-node src/scripts/knex.ts migrate:make",
+    "hello": "echo \"Hello from feature branch!\""
   },
   "dependencies": {
     "@google/genai": "^1.10.0",
@@ -66,8 +67,10 @@
     "typescript",
     "express",
     "docker",
-    "nodejs"
+    "nodejs",
+    "pr-practice"
   ],
   "author": "Your Name",
   "license": "MIT"
 }
+
